@@ -8,7 +8,7 @@
   "activationCommands": {
     "atom-workspace": "x86-assembly-highlighter:toggle"
   },
-  "repository": "https://github.com/atom/x86-assembly-highlighter",
+  "repository": "https://github.com/GordonYuanyc/x86-Assembly-Highlighter",
   "license": "MIT",
   "engines": {
     "atom": ">=1.0.0 <2.0.0"
