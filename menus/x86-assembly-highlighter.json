@@ -1,0 +1,26 @@
+{
+  "context-menu": {
+    "atom-text-editor": [
+      {
+        "label": "Toggle x86-assembly-highlighter",
+        "command": "x86-assembly-highlighter:toggle"
+      }
+    ]
+  },
+  "menu": [
+    {
+      "label": "Packages",
+      "submenu": [
+        {
+          "label": "x86-assembly-highlighter",
+          "submenu": [
+            {
+              "label": "Toggle",
+              "command": "x86-assembly-highlighter:toggle"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

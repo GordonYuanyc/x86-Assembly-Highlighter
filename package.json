@@ -1,0 +1,18 @@
+{
+  "name": "x86-assembly-highlighter",
+  "main": "./lib/x86-assembly-highlighter",
+  "version": "0.0.0",
+  "description": "This package is for highlighting x86 Assembly language. That's all.",
+  "keywords": [
+  ],
+  "activationCommands": {
+    "atom-workspace": "x86-assembly-highlighter:toggle"
+  },
+  "repository": "https://github.com/atom/x86-assembly-highlighter",
+  "license": "MIT",
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  },
+  "dependencies": {
+  }
+}

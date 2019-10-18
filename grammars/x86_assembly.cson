@@ -1,0 +1,45 @@
+'scopeName': 'source.s'
+'name':'x86-Assembly'
+'fileTypes':['s']
+'patterns':[
+    {
+        'match': '\\b(addq?l?w?b?|subq?l?w?b?|mulq?l?w?b?|incq?l?w?b?|movq?l?w?b?|andq|andl|andw|andb|cmp|retq?|jmp|jg|jge|jl|jle|jn?e?z?|testq?l?w?b?|call|popq|pushq|orl|andl|cmpq?l?w?b?|sar|shr?l?q?l?|i?divq?l?|cqto|cwtl|cltq|leaq?l?w?b?)\\b'
+        'name': 'keyword.other.s'
+    }
+    {
+        'match': '(\\%r?e?ax|\\%r?e?bx|\\%r?e?cx|\\%r?e?dx|\\%r?e?di|\\%r?e?si|\\%r8d?w?|\\%r9d?w?|\\%r10|\\%r11d?|\\%r12d?|\\%r13d?|\\%r14d?|\\%r15d?|\\%ax|\\%bx|\\%cx|\\%dx|\\%al|\\%bl|\\%cl|\\%dl|\\%ri?s?p)'
+        'name': 'entity.name.constant.s'
+    }
+    {
+        'match': '(\\$?0b[01]+|\\$?0x[ABCDEF0-9]+|\\$\\d+|\\d+)'
+        'name': 'entity.name.constant.s'
+    }
+    {
+        'match': '\\.([A-Za-z0-9_]*)\\:?'
+        'name': 'entity.name.section.s'
+    }
+    {
+        'match': '\\d*\\([\\%\\,a-z0-9]+\\)'
+        'name': 'storage.type.struct.s'
+    }
+    {
+        'match': '([A-Za-z0-9_]*)\\:'
+        'name': 'entity.name.function.s'
+    }
+
+    {
+        'match': '\\b(\\#)\\b'
+        'name': 'comment.block.s'
+    }
+    {
+        'begin': '\\#'
+        'beginCaptures':
+          '0':
+            'name': 'punctuation.definition.comment.begin.s'
+        'end': '\\n'
+        'endCaptures':
+          '0':
+            'name': 'punctuation.definition.comment.end.s'
+        'name': 'comment.block.s'
+    }
+]
